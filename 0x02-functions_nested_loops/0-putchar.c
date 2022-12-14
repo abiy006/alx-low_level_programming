@@ -1,4 +1,10 @@
 #include "main.h"
+/*
+ * main - the first function called
+ * 
+ * Return: 0 always 
+ *
+ * */
 
 int main(void)
 {
