@@ -2,12 +2,12 @@
 
 /**
  * add - starting
- * Return: i + j
+ * @i: first number
+ * @j: second number
+ * Return: addition result
  */
 
-int add(int, int)
+int add(int i, int j)
 {
-	int i, j;
-
-	return i + j;
+	return (i + j);
 }
