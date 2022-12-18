@@ -28,5 +28,6 @@ int _putchar(char);
 
 void times_table(void);
 
+void print_times_table(int i);
 
 #endif
