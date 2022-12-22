@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * strcat - starting ...
- * @src: source string 
+ * _strcat - starting ...
+ * @src: source string
  * @dest: destination string ...
  * Return: pointer to @dest
  */
