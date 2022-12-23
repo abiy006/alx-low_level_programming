@@ -2,21 +2,24 @@
 
 /**
  * leet - starting ...
- * @str: string
+ * @n: string
  * Return: string
  */
-char *leet(char *str)
+char *leet(char *n)
 {
-	int i = 0, j;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
+	char s1[] = "aAeEoOtTlL"
+	char s2[] = "4433007711"
 
-	while (str[++i])
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 7; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (str[i] == leet[j] || str[i] - 32 == leet[j])
-				str[i] = j + '0';
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
 		}
 	}
-	return (str);
+	return (n);
 }
