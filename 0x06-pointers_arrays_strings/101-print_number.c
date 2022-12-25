@@ -13,6 +13,7 @@ unsigned int x = n;
 	{
 		_putchar('-');
 		n = n * -1;
+                print_number(n);
 	}
         else
         {
