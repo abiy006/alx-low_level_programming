@@ -9,9 +9,9 @@ int main(void)
 {
 	int i, j;
 	int f = 0;
-	int h = 0;
-	int k1 = 0;
-	int k2 = 0;
+	long h = 0;
+	long k1 = 0;
+	long k2 = 0;
 
 	while (f < 98)
 	{
