@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	long i, j;
+	unsigned long i, j;
 	int f = 0;
-	long h = 0;
-	long k1 = 0;
-	long k2 = 0;
+	unsigned long h = 0;
+	unsigned long k1 = 0;
+	unsigned long k2 = 0;
 
 	while (f < 98)
 	{
