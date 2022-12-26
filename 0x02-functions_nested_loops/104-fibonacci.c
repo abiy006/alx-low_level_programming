@@ -31,14 +31,14 @@ unsigned long k2;
 		else
 		{
 			h = k1 + k2;
-			k1 = k2;
 			printf("%lu", h);
-			k2 = h;
 			if (f != 97)
 			{
 				printf(", ");
 			}
 		}
+	k1 = k2;
+	k2 = h;
 	f++;
 	}
 	printf("\n");
