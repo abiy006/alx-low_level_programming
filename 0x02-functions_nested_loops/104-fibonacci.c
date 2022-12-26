@@ -23,20 +23,22 @@ unsigned long k2;
 		}
 		else if (f == 1)
 		{
-			h = i + j;
+                        k1 = i;
+                        k2 = j;
 			printf("%lu", j);
 			printf(", ");
 		}
 		else
 		{
-			k1 = k2;
+
+			h = k1 + k2;
+                        k1 = k2;
 			k2 = h;
 			printf("%lu", h);
 			if (f != 97)
 			{
 				printf(", ");
 			}
-			h = k1 + k2;
 
 		}
 	f++;
