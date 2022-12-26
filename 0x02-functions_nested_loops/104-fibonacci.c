@@ -7,18 +7,18 @@
 
 int main(void)
 {
-	unsigned long i, j;
+	unsigned long long i, j;
 	int f = 0;
-	unsigned long h;
-	unsigned long k1;
-	unsigned long k2;
+	unsigned long long h;
+	unsigned long long k1;
+	unsigned long long k2;
 
 	while (f < 98)
 	{
 		if (f == 0)
 		{
 			i = 1;
-			printf("%lu", i);
+			printf("%llu", i);
 			printf(", ");
 		}
 		else if (f == 1)
@@ -27,13 +27,13 @@ int main(void)
 			h = i + j;
 			k1 = i;
 			k2 = j;
-			printf("%lu", j);
+			printf("%llu", j);
 			printf(", ");
 		}
 		else
 		{
 			h = k1 + k2;
-			printf("%lu", h);
+			printf("%llu", h);
 			k1 = k2;
 			k2 = h;
 				if (f != 97)
