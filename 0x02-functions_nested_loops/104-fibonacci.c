@@ -18,7 +18,7 @@ int main(void)
 		if (f == 0)
 		{
 			i = 1;
-			printf("%d", i);
+			printf("%lu", i);
 			printf(",");
 		}
 		else if (f == 1)
@@ -27,7 +27,7 @@ int main(void)
 			h = i + j;
 			k1 = j;
 			k2 = h;
-			printf("%d", j);
+			printf("%lu", j);
 			printf(",");
 		}
 		else
@@ -35,7 +35,7 @@ int main(void)
 			h = k1 + k2;
 			k1 = k2;
 			k2 = h;
-			printf("%d", h);
+			printf("%lu", h);
 			if (f != 97)
 			{
 				printf(",");
