@@ -7,29 +7,39 @@
 
 int main(void)
 {
+	int i, j;
 	int f = 0;
-	int array[98];
+	int h = 0;
+	int h1 = 0;
+	int h2 = 0;
 
 	while (f < 98)
 	{
 		if (f == 0)
 		{
-			array[0] = 1;
+			i = 1;
+			h1 = i;
+			printf("%d", i);
+			printf(",");
 		}
 		else if (f == 1)
 		{
-			array[1] = 2;
+			j = 2;
+			h2 = j;
+			printf("%d", j);
+			printf(",");
 		}
 		else
 		{
-			array[f] = array[f - 1] + array[f - 2];
+			h = h1 + h2;
+			printf("%d", h);
+			if (f != 97)
+			{
+				printf(",");
+			}
+		h2 = h;
+		h1 = h2;
 		}
-
-	printf("%d", array[f]);
-	if (f != 97)
-	{
-	printf(",");
-	}
 	f++;
 	}
 	printf("\n");
