@@ -9,9 +9,9 @@ int main(void)
 {
 	unsigned long i, j;
 	int f = 0;
-	unsigned long h = 0;
-	unsigned long k1 = 0;
-	unsigned long k2 = 0;
+	unsigned long h;
+	unsigned long k1;
+	unsigned long k2;
 
 	while (f < 98)
 	{
