@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i, j;
+	long i, j;
 	int f = 0;
 	long h = 0;
 	long k1 = 0;
