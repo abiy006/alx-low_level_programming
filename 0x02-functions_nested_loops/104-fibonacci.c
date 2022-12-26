@@ -31,13 +31,13 @@ unsigned long k2;
 		else
 		{
 			h = k1 + k2;
+			k1 = k2;
 			printf("%lu", h);
-			(unsigned) k1 = k2;
-			(unsigned) k2 = h;
-				if (f != 97)
-				{
-					printf(", ");
-				}
+			k2 = h;
+			if (f != 97)
+			{
+				printf(", ");
+			}
 		}
 	f++;
 	}
