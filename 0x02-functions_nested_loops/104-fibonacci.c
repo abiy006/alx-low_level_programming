@@ -7,7 +7,8 @@
 
 int main(void)
 {
-	unsigned long i, j;
+	unsigned long i = 1;
+        unsigned long j = 2;
 	int f = 0;
 	unsigned long h;
 	unsigned long k1;
@@ -17,13 +18,11 @@ int main(void)
 	{
 		if (f == 0)
 		{
-			i = 1;
 			printf("%lu", i);
 			printf(", ");
 		}
 		else if (f == 1)
 		{
-			j = 2;
 			h = i + j;
 			k1 = i;
 			k2 = j;
