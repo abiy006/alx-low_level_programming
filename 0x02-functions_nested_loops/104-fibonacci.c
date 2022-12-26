@@ -18,23 +18,23 @@ int main(void)
 		if (f == 0)
 		{
 			i = 1;
-			h1 = i;
 			printf("%d", i);
 			printf(",");
 		}
 		else if (f == 1)
 		{
 			j = 2;
-			h2 = j;
+			h = i + j;
+			k1 = j;
+			k2 = h;
 			printf("%d", j);
 			printf(",");
 		}
 		else
 		{
-			h = h1 + h2;
-			h2 = h;
-			h1 = h2;
-
+			h = k1 + k2;
+			k1 = k2;
+			k2 = h;
 			printf("%d", h);
 			if (f != 97)
 			{
