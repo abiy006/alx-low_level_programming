@@ -19,7 +19,7 @@ int main(void)
 		{
 			i = 1;
 			printf("%lu", i);
-			printf(",");
+			printf(", ");
 		}
 		else if (f == 1)
 		{
@@ -28,7 +28,7 @@ int main(void)
 			k1 = i;
 			k2 = j;
 			printf("%lu", j);
-			printf(",");
+			printf(", ");
 		}
 		else
 		{
@@ -38,7 +38,7 @@ int main(void)
 			printf("%lu", h);
 			if (f != 97)
 			{
-				printf(",");
+				printf(", ");
 			}
 		}
 	f++;
