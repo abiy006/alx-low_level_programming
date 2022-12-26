@@ -32,13 +32,14 @@ int main(void)
 		else
 		{
 			h = h1 + h2;
+			h2 = h;
+			h1 = h2;
+
 			printf("%d", h);
 			if (f != 97)
 			{
 				printf(",");
 			}
-		h2 = h;
-		h1 = h2;
 		}
 	f++;
 	}
