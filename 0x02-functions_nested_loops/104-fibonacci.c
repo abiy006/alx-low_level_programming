@@ -10,8 +10,8 @@ int main(void)
 	int i, j;
 	int f = 0;
 	int h = 0;
-	int h1 = 0;
-	int h2 = 0;
+	int k1 = 0;
+	int k2 = 0;
 
 	while (f < 98)
 	{
