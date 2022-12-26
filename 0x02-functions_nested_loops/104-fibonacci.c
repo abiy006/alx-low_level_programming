@@ -23,7 +23,6 @@ int main(void)
 		}
 		else if (f == 1)
 		{
-			h = i + j;
 			k1 = i;
 			k2 = j;
 			printf("%lu", j);
