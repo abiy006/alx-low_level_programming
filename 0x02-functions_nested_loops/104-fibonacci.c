@@ -25,8 +25,8 @@ int main(void)
 		{
 			j = 2;
 			h = i + j;
-			k1 = j;
-			k2 = h;
+			k1 = i;
+			k2 = j;
 			printf("%lu", j);
 			printf(",");
 		}
