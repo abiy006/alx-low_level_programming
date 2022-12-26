@@ -33,13 +33,13 @@ int main(void)
 		else
 		{
 			h = k1 + k2;
+			printf("%lu", h);
 			k1 = k2;
 			k2 = h;
-			printf("%lu", h);
-			if (f != 97)
-			{
-				printf(", ");
-			}
+				if (f != 97)
+				{
+					printf(", ");
+				}
 		}
 	f++;
 	}
