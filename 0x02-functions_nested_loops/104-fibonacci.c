@@ -26,16 +26,18 @@ long double h, k1, k2;
 		}
 		else
 		{
-			h = k2 + k1;
-			k1 = k2;
-			k2 = h;
 			if (f == 96)
 			{
-				h = h + 1;
+				h = k1 + k2 + 1;
+				k1 = k2;
+				k2 = h;
 				printf("%.0Lf", h);
 			}
 			else
 			{
+				h = k2 + k1;
+				k1 = k2;
+				k2 = h;
 				printf("%.0Lf", h);
 			}
 			if (f != 97)
