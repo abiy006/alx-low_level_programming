@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-uint64_t i = 1;
-uint64_t j = 2;
+unsigned long int i = 1;
+unsigned long int j = 2;
 int f = 0;
-uint64_t h, k1, k2;
+unsigned long int h, k1, k2;
 
 	while (f < 98)
 	{
 		if (f == 0)
 		{
-			printf("%lu", i);
+			printf("%ld", i);
 			printf(", ");
 		}
 		else if (f == 1)
 		{
 			k1 = i;
 			k2 = j;
-			printf("%lu", j);
+			printf("%ld", j);
 			printf(", ");
 		}
 		else
@@ -30,7 +30,7 @@ uint64_t h, k1, k2;
 			h = k1 + k2;
 			k1 = k2;
 			k2 = h;
-			printf("%lu", h);
+			printf("%ld", h);
 
 			if (f != 97)
 			{
