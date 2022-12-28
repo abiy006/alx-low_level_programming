@@ -32,13 +32,14 @@ long double k2;
 		{
 
 
-			(long) h = k2 + k1;
+			h = k2 + k1;
+			h = Math.round(h);
 			
-			k1 = 0;
-			(long) k1 = k2;
+			k1 = k2;
+			k1 = Math.round(k1);
 			
-			k2 = 0;
-			(long) k2 = h;
+			k2 = h;
+			k2 = Math.round(k2);
 			
 			printf("%Lf", h);
 			if (f != 97)
