@@ -10,14 +10,14 @@ long double j = 2;
 int f = 0;
 long double h, k1, k2;
 
-	while (f < 98)
+	for (int a = 0; a < 98; a++)
 	{
-		if (f == 0)
+		if (a == 0)
 		{
 			printf("%.0Lf", i);
 			printf(", ");
 		}
-		else if (f == 1)
+		else if (a == 1)
 		{
 			k1 = i;
 			k2 = j;
@@ -29,14 +29,13 @@ long double h, k1, k2;
 			h = k1 + k2;
 			k1 = k2;
 			k2 = h;
-			printf("%.0lf", h);
+			printf("%.0Lf", h);
 
-			if (f != 97)
+			if (a != 97)
 			{
 				printf(", ");
 			}
 		}
-	f++;
 	}
 	printf("\n");
 	return (0);
