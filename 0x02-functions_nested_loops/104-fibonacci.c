@@ -29,16 +29,7 @@ long double h, k1, k2;
 			h = k1 + k2;
 			k1 = k2;
 			k2 = h;
-			if (f == 97)
-			{
-				h = h + 2;
-				printf("%.0Lf", h);
-			}
-			else
-			{
-			printf("%.0Lf", h);
-			}
-
+			printf("%.0lf", h);
 
 			if (f != 97)
 			{
