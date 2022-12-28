@@ -1,18 +1,14 @@
 #include "stdio.h"
-
 /**
  * main - starting
  * Return: 0
  */
-
 int main(void)
 {
 long double i = 1;
 long double j = 2;
 int f = 0;
-long double h;
-long double k1;
-long double k2;
+long double h, k1, k2;
 
 	while (f < 98)
 	{
@@ -30,20 +26,23 @@ long double k2;
 		}
 		else
 		{
-
 			h = k2 + k1;
 			k1 = k2;
 			k2 = h;
-			printf("%.0Lf", h);
-			if (f != 97)
+			if (f == 97)
 			{
-				printf(", ");
+				h = h + 2;
+				printf("%.0Lf", h);
 			}
-
+			else
+			{
+				printf("%.0Lf", h);
+			}
+			if (f != 97)
+			{printf(", "); }
 		}
 	f++;
 	}
 	printf("\n");
-
 	return (0);
 }
