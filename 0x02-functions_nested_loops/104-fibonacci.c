@@ -7,25 +7,25 @@
 
 int main(void)
 {
-unsigned long i = 1;
-unsigned long j = 2;
+unsigned long double i = 1;
+unsigned long double j = 2;
 int f = 0;
-unsigned long h;
-unsigned long k1;
-unsigned long k2;
+unsigned long double h;
+unsigned long double k1;
+unsigned long double k2;
 
 	while (f < 98)
 	{
 		if (f == 0)
 		{
-			printf("%lu", i);
+			printf("%Lf", i);
 			printf(", ");
 		}
 		else if (f == 1)
 		{
                         k1 = i;
                         k2 = j;
-			printf("%lu", j);
+			printf("%Lf", j);
 			printf(", ");
 		}
 		else
@@ -40,7 +40,7 @@ unsigned long k2;
 			k2 = 0;
 			k2 = h;
 			
-			printf("%lu", h);
+			printf("%Lf", h);
 			if (f != 97)
 			{
 				printf(", ");
