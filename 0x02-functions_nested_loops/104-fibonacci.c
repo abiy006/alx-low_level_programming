@@ -18,7 +18,11 @@ int f = 0;
 		c1 = c2;
 		c2 = h;
 		}
-
+		if (f == 2)
+		{
+			c1 = i;
+			c2 = j;
+		}
 		if (f == 0)
 		{
 			printf("%.0Lf", i);
@@ -26,27 +30,16 @@ int f = 0;
 		}
 		else if (f == 1)
 		{
-			c1 = i;
-			c2 = j;
 			printf("%.0Lf", j);
 			printf(", ");
 		}
 		else
 		{
-			if (f == 3)
-			{
-				c1 = i;
-				c2 = j;
-			}
-
-
 			h = c1 + c2;
 			printf("%.0Lf", h);
-
 			if (f != 97)
 			{
-				printf(", ");
-			}
+				printf(", "); }
 		}
 	f++;
 	}
