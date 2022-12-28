@@ -26,7 +26,7 @@ long double h, k1, k2;
 		}
 		else
 		{
-			if (f == 96)
+			if (f == 95)
 			{
 				h = k1 + k2 + 1;
 				k1 = k2;
@@ -35,7 +35,7 @@ long double h, k1, k2;
 			}
 			else
 			{
-				h = k2 + k1;
+				h = k1 + k2;
 				k1 = k2;
 				k2 = h;
 				printf("%.0Lf", h);
