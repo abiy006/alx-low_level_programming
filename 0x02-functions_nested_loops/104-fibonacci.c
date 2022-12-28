@@ -23,24 +23,17 @@ long double k2;
 		}
 		else if (f == 1)
 		{
-                        k1 = i;
-                        k2 = j;
+			k1 = i;
+			k2 = j;
 			printf("%.0Lf", j);
 			printf(", ");
 		}
 		else
 		{
 
-
-			h = 0;
 			h = k2 + k1;
-			
-			k1 = 0;
 			k1 = k2;
-			
-			k2 = 0;
 			k2 = h;
-			
 			printf("%.0Lf", h);
 			if (f != 97)
 			{
