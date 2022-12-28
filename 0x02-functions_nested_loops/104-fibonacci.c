@@ -14,14 +14,14 @@ long double h, k1, k2;
 	{
 		if (f == 0)
 		{
-			printf("%Lf", i);
+			printf("%.0Lf", i);
 			printf(", ");
 		}
 		else if (f == 1)
 		{
 			k1 = i;
 			k2 = j;
-			printf("%Lf", j);
+			printf("%.0Lf", j);
 			printf(", ");
 		}
 		else
@@ -29,7 +29,7 @@ long double h, k1, k2;
 			h = k1 + k2;
 			k1 = k2;
 			k2 = h;
-			printf("%Lf", h);
+			printf("%.0Lf", h);
 
 			if (f != 97)
 			{
