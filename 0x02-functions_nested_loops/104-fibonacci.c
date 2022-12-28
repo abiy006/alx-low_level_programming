@@ -32,13 +32,13 @@ unsigned long k2;
 		{
 
 
-			h = k2 + k2;
-			
-			k2 = 0;
-			k2 = h;
+			h = k2 + k1;
 			
 			k1 = 0;
 			k1 = k2;
+			
+			k2 = 0;
+			k2 = h;
 			
 			printf("%lu", h);
 			if (f != 97)
