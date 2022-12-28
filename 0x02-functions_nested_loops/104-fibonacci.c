@@ -26,22 +26,20 @@ long double h, k1, k2;
 		}
 		else
 		{
-			if (f == 95)
+			h = k1 + k2;
+			k1 = k2;
+			k2 = h;
+			if (f == 97)
 			{
-				h = k1 + k2 + 1;
-				k1 = k2;
-				k2 = h;
-				printf("%.0Lf", h);
+				h = h + 2;
 			}
-			else
-			{
-				h = k1 + k2;
-				k1 = k2;
-				k2 = h;
-				printf("%.0Lf", h);
-			}
+
+			printf("%.0Lf", h);
+
 			if (f != 97)
-			{printf(", "); }
+			{
+				printf(", ");
+			}
 		}
 	f++;
 	}
