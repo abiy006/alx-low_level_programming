@@ -8,10 +8,17 @@ int main(void)
 long double i = 1;
 long double j = 2;
 int f = 0;
-long double h, k1, k2;
 
 	while (f < 98)
 	{
+		long double c1, c2, h;
+
+		if ((f != 1) || (f != 2) || (f != 3))
+		{
+		c1 = c2;
+		c2 = h;
+		}
+
 		if (f == 0)
 		{
 			printf("%.0Lf", i);
@@ -19,16 +26,14 @@ long double h, k1, k2;
 		}
 		else if (f == 1)
 		{
-			k1 = i;
-			k2 = j;
+			c1 = i;
+			c2 = j;
 			printf("%.0Lf", j);
 			printf(", ");
 		}
 		else
 		{
-			h = k1 + k2;
-			k1 = k2;
-			k2 = h;
+			h = c1 + c2;
 			printf("%.0Lf", h);
 
 			if (f != 97)
