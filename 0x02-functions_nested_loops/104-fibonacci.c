@@ -33,6 +33,13 @@ int f = 0;
 		}
 		else
 		{
+			if (f == 3)
+			{
+				c1 = i;
+				c2 = j;
+			}
+
+
 			h = c1 + c2;
 			printf("%.0Lf", h);
 
