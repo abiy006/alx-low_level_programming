@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-long double i = 1;
-long double j = 2;
+uint64_t i = 1;
+uint64_t j = 2;
 int f = 0;
 uint64_t h, k1, k2;
 
