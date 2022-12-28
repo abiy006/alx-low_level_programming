@@ -8,16 +8,16 @@ int main(void)
 long double i = 1;
 long double j = 2;
 int f = 0;
-long double h, k1, k2;
+int64_t h, k1, k2;
 
-	for (int a = 0; a < 98; a++)
+	while (f < 98)
 	{
-		if (a == 0)
+		if (f == 0)
 		{
 			printf("%.0Lf", i);
 			printf(", ");
 		}
-		else if (a == 1)
+		else if (f == 1)
 		{
 			k1 = i;
 			k2 = j;
@@ -31,7 +31,7 @@ long double h, k1, k2;
 			k2 = h;
 			printf("%.0Lf", h);
 
-			if (a != 97)
+			if (f != 97)
 			{
 				printf(", ");
 			}
