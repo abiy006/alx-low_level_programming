@@ -7,12 +7,12 @@
 
 int main(void)
 {
-unsigned long double i = 1;
-unsigned long double j = 2;
+long double i = 1;
+long double j = 2;
 int f = 0;
-unsigned long double h;
-unsigned long double k1;
-unsigned long double k2;
+long double h;
+long double k1;
+long double k2;
 
 	while (f < 98)
 	{
