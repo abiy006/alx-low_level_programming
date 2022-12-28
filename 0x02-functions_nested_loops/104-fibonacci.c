@@ -18,14 +18,14 @@ long double k2;
 	{
 		if (f == 0)
 		{
-			printf("%Lf", i);
+			printf("%.0Lf", i);
 			printf(", ");
 		}
 		else if (f == 1)
 		{
                         k1 = i;
                         k2 = j;
-			printf("%Lf", j);
+			printf("%.0Lf", j);
 			printf(", ");
 		}
 		else
@@ -33,15 +33,12 @@ long double k2;
 
 
 			h = k2 + k1;
-			h = Math.round(h);
 			
 			k1 = k2;
-			k1 = Math.round(k1);
 			
 			k2 = h;
-			k2 = Math.round(k2);
 			
-			printf("%Lf", h);
+			printf("%.0Lf", h);
 			if (f != 97)
 			{
 				printf(", ");
