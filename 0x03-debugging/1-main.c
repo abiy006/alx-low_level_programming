@@ -1,6 +1,18 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
- * main - starting ...
+ * main - starting ..
  * Return: 0
  */
 
+int main(void)
+{
+int i;
+
+printf("Infinite loop incoming :(\n");
+
+i = 0;
+
+printf("Infinite loop avoided! \\o/\n");
+return (0);
+}
