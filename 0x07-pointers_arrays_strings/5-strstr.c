@@ -8,25 +8,26 @@
  * Return:  a pointer or null...
  */
 
-char *_strstr(char *haystack, char *needle)
+char  *_strstr(char *haystack, char *needle)
 {
 	int i;
 
 	if (*needle == 0)
-		return (heystack);
-	while (*heystack)
+		return (haystack);
+
+	while (*haystack)
 	{
 		i = 0;
 
-		if (heystack[i] == needle[i])
+		if (haystack[i] == needle[i])
 		{
 			do {
 				if (needle[i + 1] == '\0')
-					return (heystack);
+					return (haystack);
 				i++;
-			} while (heystack[i] == needle[i]);
+			} while (haystack[i] == needle[i]);
 		}
-		heystack++;
+		haystack++;
 	}
 	return ('\0');
 }
