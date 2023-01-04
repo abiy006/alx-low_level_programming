@@ -24,7 +24,7 @@ int _myloop(int x, int y)
  */
 int is_prime_number(int n)
 {
-	if (n < 2)
+	if (n <= 1)
 		return (1);
 	return (_myloop(n, n - 1));
 }
