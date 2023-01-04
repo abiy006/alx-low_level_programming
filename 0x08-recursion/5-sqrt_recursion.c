@@ -14,7 +14,7 @@ int _myloop(int x, int y)
 	else if (x * x > y)
 		return (-1);
 	else
-		return (x * _myloop(x + 1, y));
+		return (_myloop(x + 1, y));
 }
 
 /**
