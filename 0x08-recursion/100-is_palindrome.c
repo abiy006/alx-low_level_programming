@@ -1,5 +1,5 @@
 #include "abiy.h"
-
+#include <stdio.h>
 /**
  * is_palindrome -return is string is a palindrome
  * @s: string ...
