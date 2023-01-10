@@ -1,91 +1,112 @@
 #include "abiy.h"
 
 /**
- * strtow - converts a sting to an array of the words in the string
- * @str: Pointer to the first character in the original string
+ * _strlen - returns the length of a string
  *
- * Return: A pointer to the first pointer in an array of pointers which each
- *			point to the first character in the string of a word
+ * @s: string type char
+ * Return: returns the lenght of a string
  */
-char **strtow(char *str)
+int _strlen(char *s)
 {
-	char **dest;
-	int wordcount, onword = 0, wordsize;
-	int i, j, w;
+	int len;
 
-	if (str == NULL || str[0] == '\0')
-		return (NULL);
+	len = 0;
+	while (*s++ != '\0')
+		len++;
 
-	wordcount = get_wordcount(str);
-	if (!wordcount)
-		return (NULL);
-
-	dest = malloc(sizeof(char *) * (wordcount + 1));
-	if (dest == NULL)
-		return (NULL);
-	dest[wordcount] = NULL;
-
-	for (i = 0; str[i]; i++)
-	{
-		if (str[i] == ' ')
-			continue;
-		for (j = i; str[j] && str[j] != ' '; j++)
-			;
-		wordsize = j - i;
-		dest[onword] = malloc(sizeof(char) * (wordsize + 1));
-		if (dest[onword] == NULL)
-		{
-			freememc(dest);
-			return (NULL);
-		}
-		for (w = 0; str[i] && str[i] != ' '; i++, w++)
-			dest[onword][w] = str[i];
-		dest[onword][w] = '\0';
-
-		if (!str[i])
-			i--;
-		onword++;
-	}
-	return (dest);
+	return (len);
 }
 
-
 /**
- * freememc - frees the memory of an array of pointers pointing to arrays
- * @d: pointer to first pointer in array
+ * count_words - counts the number of words in a string
+ *
+ * @str: The string
+ * Return: The number of words or
+ * any characters separated by spaces
  */
-void freememc(char **d)
+int count_words(char *str)
 {
 	int i;
+	int count = 0, word = 0;
 
-	for (i = 0; d[i] != NULL; i++)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		free(d[i]);
-	}
-	free(d);
-}
-
-/**
- * get_wordcount - gets the number of words in a string with space separators
- * @c: pointer to the first character in the string
- *
- * Return: Number of words in the string
- */
-int get_wordcount(char *c)
-{
-	int i, count = 0;
-
-	for (i = 0; c[i]; i++)
-	{
-		if (c[i] != ' ')
+		if (str[i] != ' ' && word == 0)
 		{
 			count++;
-			for (; c[i] && c[i] != ' '; i++)
-				;
+			word = 1;
 		}
-		if (!c[i])
-			c--;
+		else if (str[i] == ' ')
+		{
+			word = 0;
+		}
+		i++;
 	}
 
 	return (count);
+}
+
+/**
+ * free_gridc - frees a 2 dimensional grid
+ * @grid: grid to free
+ * @height: height of grid
+ * Return: void
+ */
+void free_gridc(char **grid, int height)
+{
+	int i;
+
+	i = 0;
+	while (i < height)
+		free(grid[i++]);
+
+	free(grid);
+}
+
+
+/**
+ * strtow - function that splits a string into words.
+ * @str: input
+ * Return: a pointer to an array of strings (words)
+ */
+char **strtow(char *str)
+{
+	int i, j = 0, k, temp_len = 0;
+	char **arr;
+
+	if (str == NULL || _strlen(str) == 0)
+		return (NULL);
+	if (count_words(str) == 0)
+		return (NULL);
+	arr = (char **)malloc((count_words(str) + 1) * sizeof(char *));
+	if (arr == NULL)
+		return (NULL);
+
+	for (i = 0; i < _strlen(str); i++)
+	{
+		if (str[i] != ' ')
+		{
+			for (k = i, temp_len = 0; str[k] != '\0' && str[k] != ' '; k++)
+				temp_len++;
+
+			arr[j] = (char *)malloc((temp_len + 1) * sizeof(char));
+			if (arr[j] == NULL)
+			{
+				free_gridc(arr, k);
+				return (NULL);
+			}
+			k = 0;
+			while (str[i] != '\0' && str[i] != ' ')
+			{
+				arr[j][k] = str[i];
+				i++;
+				k++;
+			}
+			arr[j][k] = '\0';
+			j++;
+		}
+	}
+	arr[j] = NULL;
+	return (arr);
 }
