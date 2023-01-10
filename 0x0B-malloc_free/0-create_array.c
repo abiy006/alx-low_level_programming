@@ -1,7 +1,7 @@
 #include "abiy.h"
 
 /**
- * create_array - creates an array of chars, and initializes it with a specific char.
+ * create_array - creates an array of chars, initialize it with a specific char
  * @size: size of the array
  * @c: the initialized charactor
  *
