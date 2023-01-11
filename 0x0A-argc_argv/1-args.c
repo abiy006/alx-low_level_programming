@@ -2,20 +2,20 @@
 
 /**
  * main - Prints the number of arguments passed into main
- * @arg1: Number of command line arguments
- * @arg2: Array name
+ * @argi: Number of command line arguments
+ * @argj: Array name
  * Return: 0
  */
 
-int main(int arg1, char *arg2[])
+int main(int argi, char *argj[])
 {
 	int a;
 
-	if (arg1 == 1)
-		printf("%d\n", arg1 - 1);
+	if (argi == 1)
+		printf("%d\n", argi - 1);
 	else
 	{
-		for (a = 0; *arg2; a++, arg2++)
+		for (a = 0; *argj; a++, argj++)
 			;
 
 		printf("%d\n", a - 1);
