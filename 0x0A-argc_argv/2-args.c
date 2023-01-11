@@ -14,7 +14,7 @@ int main(int argi, char *argj[])
 
 	for (a = 0 ; a < argi ; a++)
 	{
-		printf("%s\n", argj[i]);
+		printf("%s\n", argj[a]);
 	}
 	return (0);
 }
