@@ -1,4 +1,5 @@
 #include "abiy.h"
+#include <stdio.h>
 
 /**
  * main - Prints the number of arguments passed into main
