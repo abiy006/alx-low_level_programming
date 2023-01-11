@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(int argc1, char *argv2[])
+int main(int arg1, char *arg2[])
 {
 	int a;
 
