@@ -1,18 +1,18 @@
 #include "abiy.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * malloc_checked - allocate memory for b
- * @b: whatever they give you
- * Return: void pointer
+ * malloc_checked - creates an array of integers.
+ * @b: input.
+ * Return: Output.
  */
 void *malloc_checked(unsigned int b)
 {
-	void *p = malloc(b);
+	void *g = malloc(b);
 
-	if (p == NULL)
+	if (g == NULL)
+	{
 		exit(98);
-
-	return (p);
+	}
+	return (g);
 }
