@@ -1,6 +1,8 @@
 #include "abiy.h"
 #include <stdlib.h>
 
+char *_memcpy(char *dest, char *src, unsigned int n);
+
 /**
  * _realloc - Allocates space of `new_size` bytes and moves old data to new
  *            space.
